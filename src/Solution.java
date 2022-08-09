@@ -1,7 +1,4 @@
-import level1.Backtraking_ex;
-import level1.Budget;
-import level1.GetReportResults;
-import level1.Kakao_keypad_press;
+import level1.*;
 
 import java.util.Arrays;
 
@@ -35,19 +32,34 @@ public class Solution {
 //        System.out.println(budget.solution(new int[]{1,3,2,5,4},9));
 
 
-        GetReportResults getReportResults = new GetReportResults();
 
-        String [] id_list = {"muzi", "frodo", "apeach", "neo"};
-        String [] report = {"muzi frodo","apeach frodo","frodo neo","muzi neo","apeach muzi"};
+        // 신고받기
+
+//        GetReportResults getReportResults = new GetReportResults();
+//
+//        String [] id_list = {"muzi", "frodo", "apeach", "neo"};
+//        String [] report = {"muzi frodo","apeach frodo","frodo neo","muzi neo","apeach muzi"};
+//
+//
+//        int[] result = getReportResults.solution(id_list,report,2);
+//
+//        for (int i : result) {
+//            System.out.print(i + ", ");
+//        }
 
 
-        int[] result = getReportResults.solution(id_list,report,2);
+        // 최대공약수 최대공배수
 
-        for (int i : result) {
-            System.out.print(i + ", ");
+        MaxAndMin maxAndMin = new MaxAndMin();
+//        System.out.println(maxAndMin.solution(3,12).toString());
+
+        int[] num = maxAndMin.solution(12,3);
+
+        for (int i : num) {
+            System.out.println(i);
         }
 
-        //        System.out.println(Arrays.toString(result));
+
 
     }
 }
