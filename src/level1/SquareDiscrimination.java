@@ -14,7 +14,6 @@ public class SquareDiscrimination {
 
     public static void main(String[] args) {
         SquareDiscrimination squareDiscrimination = new SquareDiscrimination();
-
         System.out.println(squareDiscrimination.solution(121));
     }
 
