@@ -1,10 +1,16 @@
 import level1.Backtraking_ex;
 import level1.Budget;
+import level1.GetReportResults;
 import level1.Kakao_keypad_press;
+
+import java.util.Arrays;
 
 public class Solution {
 
     public static void main(String[] args) {
+
+
+
 //        Backtraking_ex s1 = new Backtraking_ex();
 //        int[] nums = {1,2,7,6,4};
 //        System.out.println(s1.solution(nums));
@@ -25,18 +31,23 @@ public class Solution {
 //
 //        부서별로 신청한 금액이 들어있는 배열 d와 예산 budget이 매개변수로 주어질 때, 최대 몇 개의 부서에 물품을 지원할 수 있는지 return 하도록 solution 함수를 완성해주세요.
 
+//        Budget budget = new Budget();
+//        System.out.println(budget.solution(new int[]{1,3,2,5,4},9));
 
 
+        GetReportResults getReportResults = new GetReportResults();
+
+        String [] id_list = {"muzi", "frodo", "apeach", "neo"};
+        String [] report = {"muzi frodo","apeach frodo","frodo neo","muzi neo","apeach muzi"};
 
 
-        Budget budget = new Budget();
-//        budget.solution(new int[]{1,3,2,5,4},9);
-        System.out.println(budget.solution(new int[]{1,3,2,5,4},9));
+        int[] result = getReportResults.solution(id_list,report,2);
 
+        for (int i : result) {
+            System.out.print(i + ", ");
+        }
 
-
-
-
+        //        System.out.println(Arrays.toString(result));
 
     }
 }
